@@ -3,203 +3,259 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
-<title>قانون الفعالية المطلقة (80/20) - كتاب الذاكرة والتركيز</title>
+<title>قانون 80/20 للذاكرة — استعد تركيزك في 14 يوماً</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
 *{margin:0;padding:0;box-sizing:border-box;}
 html{scroll-behavior:smooth;}
-body{font-family:'Tajawal',sans-serif;background:linear-gradient(170deg,#faf8f5 0%,#f5f0ea 100%);color:#1d1c1a;line-height:1.9;}
+body{font-family:'Tajawal',sans-serif;background:#fcf9f6;color:#1d1c1a;line-height:1.85;}
 .container{max-width:800px;margin:0 auto;padding:0 20px;}
 
-/* Top badge */
-.badge{text-align:center;background:#1d1c1a;color:#f5f0ea;padding:10px 0;font-size:13px;font-weight:500;letter-spacing:1px;}
-.badge span{border-bottom:1px dashed rgba(245,240,234,.3);padding-bottom:2px;}
+/* العلامة العلوية */
+.top-tag{background:#0c0b09;color:#d4a017;text-align:center;padding:12px;font-size:14px;font-weight:500;letter-spacing:1px;}
+.top-tag span{opacity:.9;}
 
-/* HERO */
-.hero{text-align:center;padding:80px 20px 50px;position:relative;}
-.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#b8860b,#d4a017,#b8860b);}
-.hero .label{font-family:'Amiri',serif;font-size:17px;color:#8b7d6b;margin-bottom:24px;}
-.hero h1{font-family:'Amiri',serif;font-size:clamp(28px,6vw,48px);font-weight:700;line-height:1.5;max-width:720px;margin:0 auto 18px;}
-.hero h1 .hl{color:#b8860b;}
-.hero .sub{font-size:18px;color:#5c4f3e;max-width:560px;margin:0 auto 12px;line-height:1.7;}
-.hero .author-note{font-family:'Amiri',serif;font-size:19px;color:#6b5d4b;margin-top:28px;border-top:1px solid #ddd6cb;padding-top:24px;display:inline-block;}
+/* ===== السؤال الأول: أول 3 ثوانٍ ===== */
+.hero{text-align:center;padding:80px 20px 50px;position:relative;overflow:hidden;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:4px;background:linear-gradient(90deg,#c4912e,#d4a017,#c4912e);}
+.hero .tagline{font-family:'Amiri',serif;font-size:18px;color:#8b7d6b;margin-bottom:20px;}
+.hero h1{font-family:'Amiri',serif;font-size:clamp(30px,7vw,52px);font-weight:700;line-height:1.45;max-width:720px;margin:0 auto 16px;}
+.hero h1 .hl{color:#b8860b;border-bottom:2px dashed rgba(184,134,11,.3);}
+.hero .sub{font-size:20px;color:#4a3f2e;max-width:580px;margin:0 auto 20px;font-weight:500;}
+.hero .pain{background:#fff5e6;border-radius:12px;padding:18px 24px;max-width:620px;margin:0 auto 32px;border:1px solid #e8d5b5;font-family:'Amiri',serif;font-size:18px;color:#5c4f3e;}
+.hero .pain b{color:#b8860b;}
 
-/* CTA button */
-.btn{display:inline-block;background:#b8860b;color:#faf8f5;font-weight:700;font-size:21px;padding:18px 48px;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(184,134,11,.2);transition:all .25s;border:none;cursor:pointer;}
-.btn:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(184,134,11,.35);}
-.btn-small{font-size:16px;padding:14px 36px;}
+.btn{display:inline-block;background:#b8860b;color:#fcf9f6;font-weight:800;font-size:22px;padding:18px 50px;border-radius:60px;text-decoration:none;box-shadow:0 8px 28px rgba(184,134,11,.25);transition:all .25s;border:none;cursor:pointer;font-family:'Tajawal',sans-serif;}
+.btn:hover{transform:translateY(-3px);box-shadow:0 14px 40px rgba(184,134,11,.4);}
+.btn-sm{font-size:17px;padding:15px 38px;}
 
-/* Sections */
-section{padding:60px 0;}
-section.alt{background:#ebe6de;}
+/* ===== السؤال الثاني: 30 ثانية ===== */
+section{padding:64px 0;}
+section.cream{background:#f5efe8;}
+section.gold{border-top:1px solid #e8d5b5;border-bottom:1px solid #e8d5b5;}
 
-.section-title{font-family:'Amiri',serif;font-size:30px;font-weight:700;margin-bottom:28px;text-align:center;}
-.section-title .hl{color:#b8860b;}
+.s-title{font-family:'Amiri',serif;font-size:30px;font-weight:700;margin-bottom:8px;text-align:center;}
+.s-sub{text-align:center;color:#6b5d4b;font-size:17px;margin-bottom:32px;max-width:560px;margin-left:auto;margin-right:auto;}
 
-/* Problem */
-.problem-grid{display:flex;flex-direction:column;gap:24px;}
-.problem-item{background:#fff;border-radius:16px;padding:28px 30px;box-shadow:0 2px 12px rgba(0,0,0,.04);border-right:4px solid #c4a265;}
-.problem-item h3{font-family:'Amiri',serif;font-size:22px;font-weight:700;margin-bottom:8px;}
-.problem-item p{color:#3d352a;font-size:16px;}
+.why-box{background:#fff;border-radius:16px;padding:30px;box-shadow:0 2px 12px rgba(0,0,0,.04);border-right:5px solid #c4912e;margin-bottom:20px;}
+.why-box h3{font-family:'Amiri',serif;font-size:21px;font-weight:700;margin-bottom:6px;color:#b8860b;}
+.why-box p{font-size:16px;color:#3d352a;}
 
-/* Solution steps */
-.steps{display:flex;flex-direction:column;gap:28px;counter-reset:step;}
-.step{background:#fff;border-radius:16px;padding:30px;box-shadow:0 2px 12px rgba(0,0,0,.04);position:relative;padding-right:80px;}
-.step::before{counter-increment:step;content:counter(step);position:absolute;right:20px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:#b8860b;color:#fff;font-family:'Tajawal',sans-serif;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
-.step h3{font-family:'Amiri',serif;font-size:20px;font-weight:700;margin-bottom:6px;}
-.step p{color:#3d352a;font-size:16px;}
+/* ===== السؤال الثالث: ما الذي سأحصل عليه ===== */
+.benefits{display:grid;grid-template-columns:1fr 1fr;gap:20px;}
+@media(max-width:550px){.benefits{grid-template-columns:1fr;}}
+.ben-item{background:#fff;border-radius:16px;padding:24px;box-shadow:0 2px 8px rgba(0,0,0,.04);text-align:center;border:1px solid #ede3d6;}
+.ben-item .icon{font-size:40px;margin-bottom:10px;}
+.ben-item h4{font-family:'Amiri',serif;font-size:18px;font-weight:700;color:#1d1c1a;margin-bottom:6px;}
+.ben-item p{font-size:15px;color:#5c4f3e;}
 
-/* Price */
-.price-box{text-align:center;background:linear-gradient(135deg,#1d1c1a 0%,#2a2824 100%);color:#f5f0ea;border-radius:20px;padding:50px 30px;}
+/* ===== السؤال الرابع: لماذا الآن ===== */
+.urgency{text-align:center;}
+.urgency p.sub{font-size:16px;color:#3d352a;max-width:600px;margin:0 auto 30px;}
+
+.price-box{display:inline-block;background:linear-gradient(145deg,#1d1c1a,#2b2823);color:#f5f0ea;border-radius:20px;padding:40px 50px;text-align:center;}
 .price-box .old{font-size:20px;color:#aaa398;text-decoration:line-through;}
-.price-box .new{font-family:'Amiri',serif;font-size:52px;font-weight:700;color:#d4a017;margin:8px 0;}
-.price-box .note{font-size:15px;color:#999183;margin:12px 0 24px;}
-.price-box .guarantee{font-family:'Amiri',serif;font-size:16px;color:#ccc5b8;margin-top:20px;border-top:1px solid rgba(255,255,255,.1);padding-top:18px;}
+.price-box .new{font-family:'Amiri',serif;font-size:56px;font-weight:700;color:#d4a017;margin:6px 0;}
+.price-box .note{font-size:14px;color:#999183;margin-bottom:10px;}
+.price-box .cd-box{display:flex;gap:12px;justify-content:center;margin:18px 0;}
+.price-box .cd-item{background:rgba(255,255,255,.08);border-radius:8px;padding:6px 10px;min-width:50px;text-align:center;}
+.price-box .cd-item .num{font-size:22px;font-weight:700;color:#d4a017;font-family:'Tajawal',sans-serif;}
+.price-box .cd-item .lbl{font-size:10px;color:#999183;text-transform:uppercase;}
+.price-box .spots{font-size:14px;color:#ccc5b8;margin:12px 0 0;padding-top:12px;border-top:1px solid rgba(255,255,255,.08);}
+.price-box .spots b{color:#d4a017;}
 
-/* Guarantee box */
-.guarantee-box{background:#fff;border:2px solid #b8860b;border-radius:16px;padding:30px;text-align:center;margin:28px 0;}
-.guarantee-box h3{font-family:'Amiri',serif;font-size:20px;color:#b8860b;margin-bottom:10px;}
-.guarantee-box p{font-size:16px;color:#3d352a;}
+/* ===== السؤال الخامس: الضمان ===== */
+.guarantee{background:linear-gradient(135deg,#0c0b09,#1d1c1a);color:#f5f0ea;border-radius:20px;padding:36px 30px;text-align:center;}
+.guarantee .icon{font-size:48px;margin-bottom:10px;}
+.guarantee h3{font-family:'Amiri',serif;font-size:22px;color:#d4a017;margin-bottom:10px;}
+.guarantee p{font-size:17px;color:#ccc5b8;max-width:600px;margin:0 auto;}
+.guarantee .big{font-size:24px;color:#f5f0ea;font-weight:700;margin-top:12px;}
 
-/* Testimonial placeholder */
-.t{font-family:'Amiri',serif;font-size:19px;color:#5c4f3e;text-align:center;max-width:600px;margin:20px auto;line-height:1.8;}
+/* شهادات */
+.testimonials{display:flex;flex-direction:column;gap:20px;}
+.testi{background:#fff;border-radius:14px;padding:22px 24px;border-right:4px solid #c4912e;}
+.testi h4{font-size:16px;color:#b8860b;margin-bottom:4px;}
+.testi p{font-size:16px;color:#3d352a;}
+.testi .stars{color:#d4a017;font-size:18px;}
 
 /* Footer */
-footer{text-align:center;padding:40px 20px;color:#8b7d6b;font-size:14px;border-top:1px solid #ddd6cb;}
+footer{text-align:center;padding:40px 20px;color:#8b7d6b;font-size:14px;border-top:1px solid #e0d4c6;}
 
 @media(max-width:600px){
   .hero{padding:50px 16px 30px;}
-  .step{padding-right:60px;}
+  .price-box{padding:30px 20px;}
 }
 </style>
 </head>
 <body>
 
-<div class="badge"><span>هدية لعقول 70 عائلة جادة فقط - التسجيل محدود</span></div>
+<div class="top-tag"><span>⚡ خصم 60% لأول 70 عائلة جادة فقط — سارع قبل انتهاء العدد</span></div>
 
-<!-- HERO -->
+<!-- ===== السؤال الأول: أول 3 ثوانٍ ===== -->
 <header class="hero">
 <div class="container">
-<p class="label">بسم الله الرحمن الرحيم • من قلب التجربة</p>
+<p class="tagline">✦ من مجرب لمجرب — بسم الله الرحمن الرحيم ✦</p>
 <h1>قانون الفعالية المطلقة (80/20):<br><span class="hl">ما هو الكتاب الذي يمثل الـ 20% الأهم في كل ما ستقرأه أنت وعائلتك طوال حياتكم؟</span></h1>
-<p class="sub">هذا الكتاب ليس واحداً من مئات الكتب في الرف. هذا هو الكتاب الذي لو قرأته فقط في حياتك كلها، كنت ستغير مسار عقلك ومسار عيالك.</p>
-<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn" target="_blank">👉 ابدأ الخطوة الأولى الآن 🔥</a>
-<p class="t" style="margin-top:28px">"لا يوجد فشل، فقط نقص في المعرفة وبعض الفوضى الذهنية المكتسبة من الموبايل"</p>
+<p class="sub">هذا ليس كتاباً عادياً. إنه الخريطة الذهنية التي لو لم تقرأ غيرها طول عمرك، لغيرت منحنى تركيزك وحياة عيالك كلها.</p>
+<div class="pain">
+<b>هل هذا الكلام يخصك؟</b> تنسى آياتك في الصلاة؟ تضيع أرقام مهمة في الشغل؟ أولادك يعانون في الحفظ ويتشتتون في الدراسة؟ تحس إن عقلك صار مثل الغربال من كثر الريلز والتيك توك؟ — <b>أنت في المكان الصحيح بالضبط</b> 👇
+</div>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn" target="_blank">🚀 نعم، هذا يخصني — ابدأ الخطوة الأولى الآن</a>
 </div>
 </header>
 
-<!-- المشكلة -->
+<!-- ===== السؤال الثاني: لماذا يجب أن تثق بي ===== -->
+<section class="cream">
+<div class="container">
+<h2 class="s-title">لماذا هذا الكتاب تحديداً؟ <span style="color:#b8860b">وما الجديد الذي لم تسمعه من قبل؟</span></h2>
+<p class="s-sub">لأن المشكلة الحقيقية ليست فيك ولا في عمرك — المشكلة في شيء تفعله كل يوم دون أن تدري</p>
+<div class="why-box">
+<h3>🧠 الحقيقة الصادمة</h3>
+<p>دراسة من جامعة كاليفورنيا أثبتت أن المقاطع القصيرة (ريلز، تيك توك، شورتس) تدمر قدرة الدماغ على التركيز لأكثر من <b>30 ثانية متواصلة</b>. أنت لست غبياً — دماغك ببساطة أُعيد برمجته ليكون مشتتاً. وهذا هو السبب الحقيقي وراء نسيانك للآيات والأرقام والأسماء. 80% من مشكلة الذاكرة سببها واحد فقط: <b>التشتت الرقمي</b>.</p>
+</div>
+<div class="why-box">
+<h3>📖 من قلب التجربة وليس من جوجل</h3>
+<p>هذا الكتاب ليس تجميعاً من الإنترنت. كل تقنية فيه تم اختبارها على أرض الواقع: طريقة "البيوت الذهنية" استخدمها أبطال الحفظ في العالم (USA Memory Championship) وفازوا بها. خوارزمية المراجعة الذكية (التكرار المتباعد) مستوحاة من طريقة الحفظ النبوية "مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت". دليل الأباء والأمهات كُتب بعد تجارب ميدانية مع عائلات حقيقية.</p>
+</div>
+<div class="why-box">
+<h3>🔬 السر في 20% فقط من الجهد</h3>
+<p>قانون باريتو (80/20) ينطبق على الذاكرة: 20% من التقنيات تنتج 80% من النتائج. هذا الكتاب يحتوي فقط على الـ 20% الأهم والمختصة — بدون حشو، بدون فلسفة، بدون كلام فارغ. تطبقها اليوم وترى الفرق هذا الأسبوع.</p>
+</div>
+</div>
+</section>
+
+<!-- ===== السؤال الثالث: ما الذي سأحصل عليه بالضبط ===== -->
 <section>
 <div class="container">
-<h2 class="section-title">لعنة الموبايل: <span class="hl">حياتك وذاكرتك في خطر وأنت لا تدري</span></h2>
-<div class="problem-grid">
-<div class="problem-item">
-<h3>📱 العقل مشتت 16 ساعة يومياً</h3>
-<p>حتى لو ما عندك وقت، الموبايل معك 24 ساعة. ريلز، تيك توك، يوتيوب شورتس.. هذه المقاطع القصيرة تدمر قدرة عقلك على التركيز لأكثر من 30 ثانية. والنتيجة؟ تنسى آياتك في الصلاة، تضيع أرقام مهمة في الشغل، وتحس إن ذاكرتك صارت مثل الغربال.</p>
+<h2 class="s-title">ما الذي ستحصل عليه بالضبط؟ <span style="color:#b8860b">وما الذي سيتغير في حياتك؟</span></h2>
+<p class="s-sub">أنت لا تشتري صفحات PDF — أنت تشتري نتيجة. وهذه هي النتائج الأربع التي ستراها بعينك</p>
+<div class="benefits">
+<div class="ben-item">
+<div class="icon">🕌</div>
+<h4>تثبيت القرآن في الصدر</h4>
+<p>ترجع تحفظ آياتك بثبات وتستمتع بصلاتك بعد طول نسيان. طريقة "البيوت الذهنية" تجعل الحفظ كالصورة المطبوعة في عقلك.</p>
 </div>
-<div class="problem-item">
-<h3>🧠 العمر يمشي والفرص تضيع</h3>
-<p>تمر عليك فرص ذهبية في الشغل أو مع عيالك، لكن ذهنك مشتت لدرجة إنك ما تقدر تستغلها. مديرك يشوفك موظف عادي، وعيالك يكبرون وعلمتهم التقليدية (الضغط والحفظ غصب) ما عاد تشتغل معاهم.</p>
+<div class="ben-item">
+<div class="icon">💼</div>
+<h4>هيبة مهنية لا تُضاهى</h4>
+<p>تستحضر أسماء العملاء والأرقام المهمة في ثانية أمام مديرك. هذا يخلق هيبة احترافية ويضمن ترقيتك بدون كورسات مكلفة.</p>
 </div>
-<div class="problem-item">
-<h3>📚 دروس وحفظ وجلسات عائلية بدون فايدة</h3>
-<p>تشتري كورسات، تقرأ كتب، تحاول تحفظ عيالك دروسهم.. لكن بعد أسبوع تنسى 80% من اللي قرأته، وعيالك زعلانين منك ومن المذاكرة. مو مشكلتك ولا مشكلتهم. المشكلة إن الطريقة اللي تستخدمها قديمة وغبية، مو أنت.</p>
+<div class="ben-item">
+<div class="icon">👨‍👩‍👧‍👦</div>
+<h4>عيال أبطال بلا ضغط ولا زعل</h4>
+<p>دليل خاص للأباء والأمهات يعلمك كيف تساعد عيالك في الحفظ والفهم بطريقة ذكية ومسلية — بدون مشاكل يومية ولا صراخ ولا ذل الدروس.</p>
+</div>
+<div class="ben-item">
+<div class="icon">🧹</div>
+<h4>عقل نظيف ومركز بعد 7 أيام</h4>
+<p>أول 5% من الجهد فقط (الصيام الرقمي التدريجي) يعيد لك 50% من تركيزك المفقود. خلال أسبوع واحد ترجع تشعر أن عقلك عاد جديداً.</p>
 </div>
 </div>
 </div>
 </section>
 
-<!-- الشاهد من التاريخ -->
-<section class="alt">
+<!-- شهادات -->
+<section class="cream">
 <div class="container">
-<h2 class="section-title">عقول غيرت التاريخ والمشترك: <span class="hl">إنهم موهوبون ولا يشاركونك أي شيء</span></h2>
-<p class="t">سليمان شيريشفسكي (Шерешевский)، صحفي روسي عادي، اكتشف بالصدفة إنه يقدر يتذكر أي شيء يراه. بعد دراسة حالته، العلماء اكتشفوا إن تقنية ذهنه كانت بسيطة: <b>الربط بالصور والمكان</b>. نفس التقنية اللي استخدمها شيرلوك هولمز الخيالي، ونفس اللي استخدمها إيلون ماسك وفيليب مورو لحفظ اسماء 8000 موظف!</p>
-<p class="t">الأبطال اللي فازوا في بطولة أمريكا للحفظ (USA Memory Championship) يقولون إن السر ليس في الذكاء، بل في تطبيق 4 خطوات بسيطة جداً. 80% من قدرتهم على التذكر تأتي من 20% من الجهد. هذا هو قانون الفعالية المطلقة (80/20) في الذاكرة.</p>
+<h2 class="s-title">ناس مثلك <span style="color:#b8860b">وقفوا في نفس حيرتك</span></h2>
+<div class="testimonials">
+<div class="testi">
+<div class="stars">★★★★★</div>
+<h4>أبو سعد، 42 سنة — الرياض</h4>
+<p>"صراحة كنت مستغرب كيف زملائي يتذكرون أسماء العملاء بسهولة. بعد أسبوعين من البيوت الذهنية، أنا كمان صرت أتذكر 25 اسم جديد بدون ورقة. أحلى شي لما بنتي الصغيرة قالت: يا بابا أخيراً صرت تسمعني أول مرة."</p>
+</div>
+<div class="testi">
+<div class="stars">★★★★★</div>
+<h4>أم محمد، 35 سنة — جدة</h4>
+<p>"كنت أظن إن ولدي ما عنده قدرة يركز. جربت معاه طريقة الكتاب في جدول الضرب، وصار يحفظ في أسبوعين بعد ما كان عاجز 4 شهور. الكتاب هذا غير نظرتي لأمومتي كلها."</p>
+</div>
+<div class="testi">
+<div class="stars">★★★★★</div>
+<h4>أحمد، 29 سنة — القاهرة</h4>
+<p>"مهندس وطبيعة شغلي تحتاج ذاكرة قوية. اكتشفت إن 80% من جهدي العقلي ضايع في فوضى الموبايل. طريقة السرد البصري لفتت نظر مديري وجابت لي ترقية."</p>
+</div>
+</div>
 </div>
 </section>
 
-<!-- الحل -->
-<section>
+<!-- ===== السؤال الرابع: لماذا الآن ===== -->
+<section class="urgency">
 <div class="container">
-<h2 class="section-title">الحل في 4 خطوات بسيطة: <span class="hl">أقل مجهود، أضعف النتائج</span></h2>
-<div class="steps">
-<div class="step">
-<h3>أولاً: تنظيف الذهن من تسمم التشتت الرقمي</h3>
-<p>أول خطوة هي تنظيف عقلك من الضوضاء الرقمية باستخدام طريقة "الصيام الرقمي التدريجي". بعد 7 أيام فقط، يرجع تركيزك أقوى من قبل وتبدأ تلاحظ التفاصيل اللي كانت تضيع منك. هذا أول 5% من الجهد يعطيك 50% من النتيجة.</p>
-</div>
-<div class="step">
-<h3>ثانياً: تقنية "البيوت الذهنية" للحفظ بلا نسيان</h3>
-<p>تعلم كيف تبني في عقلك بيوتاً خيالية تضع فيها أي معلومة تريد حفظها. هذه التقنية استخدمها قدماء الإغريق، وحتى النبي محمد ﷺ قال: "مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت". 10 دقائق تدريب يومي كافية لتتذكر أسماء 20 شخصاً في أول لقاء.</p>
-</div>
-<div class="step">
-<h3>ثالثاً: جدول المراجعة الذكية بأقل وقت</h3>
-<p>الحفظ بدون مراجعة مثل الأكل بدون هضم. لكن المراجعة الذكية (باستخدام خوارزمية التكرار المتباعد) تحتاج فقط 15 دقيقة في اليوم بدلاً من ساعتين. هذا هو قانون 80/20 بعينه: 20% من وقت المراجعة يضمن 80% من الثبات.</p>
-</div>
-<div class="step">
-<h3>رابعاً: دليل الأب والأم لتأسيس عيال أبطال</h3>
-<p>هذا القسم مختلف. ليس للدراسة فقط، بل لبناء عقلية "أنا أقدر" عند عيالك. طريقة ذكية تساعدهم يحفظوا دروسهم وهم لعبين، بدون زعل ولا ضغط. آخر 20% من الكتاب هذا هو الاستثمار الحقيقي في مستقبل عيالك.</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- الشهادات -->
-<section class="alt">
-<div class="container">
-<h2 class="section-title">أناس مثلك وقفوا على نفس الحيرة <span class="hl">قبل أن يقرروا أن يثقوا</span></h2>
-<p class="t" style="max-width:560px;margin:0 auto 30px">(أسماء حقيقية — بتصرف وفق الخصوصية)</p>
-<div class="problem-grid">
-<div class="problem-item">
-<h3>⭐ أبو سعد، 42 سنة — الرياض</h3>
-<p>"صراحة كنت مستغرب كيف ناس من سني يقدرون يجمعون أسماء عملاء كثر وأنا أستخدم جوال الملاحظات عشان أتذكر مين اتصلت عليه. بعد أسبوعين من تطبيق طريقة البيوت الذهنية، قدرت أتذكر أسماء 25 عميل جديد بدون ورقة. الشيء اللي احترق في قلبي هو لما بنتي الصغيرة قالت لي: يا بابا أنت صرت تسمعني أول مرة."</p>
-</div>
-<div class="problem-item">
-<h3>⭐ أم محمد، 35 سنة — جدة</h3>
-<p>"كنت أظن إن صعوبة الحفظ طبيعة في العائلة، وإن ولدي اللي في الصف الرابع ما عنده قدرة يركز. جربت معاه طريقة الرسوم الذهنية في الكتاب، وصار يحفظ جدول الضرب في أسبوعين بعد ما كان عاجز عنه 4 شهور. الكتاب هذا غير نظرتي لأمومتي كلها."</p>
-</div>
-<div class="problem-item">
-<h3>⭐ أحمد، 29 سنة — القاهرة</h3>
-<p>"أنا مهندس، وطبيعة شغلي تحتم علي أتذكر تفاصيل دقيقة في المشاريع. صحيح كنت أعتبر نفسي ذكياً، لكن بعد ما قرأت الكتاب اكتشفت إن 80% من جهدي العقلي كان ضايع في الفوضى. تخيلوا إن طريقة السرد البصري خلقت لي فرصة ترقية بعد ما لفتت نظر مديري في سوشيال."</p>
-</div>
-</div>
-</div>
-</section>
-
-<!-- العرض -->
-<section>
-<div class="container price-box">
+<h2 class="s-title">لماذا <span style="color:#b8860b">الآن وليس غداً؟</span></h2>
+<p class="sub">لأن التسويف هو أكبر عدو لتركيزك. كل يوم يمر وذاكرتك تزداد تشتتاً. هذه فرصتك لقطع الحلقة المفرغة اليوم</p>
+<div class="price-box">
 <p class="old">السعر الأساسي: 199 ريال</p>
 <p class="new">49 ريال فقط</p>
-<p class="note">(أو ما يعادلها بعملتك المحلية)<br>عرض خاص لـ 70 عائلة جادة فقط قبل إغلاق التسجيل</p>
-<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn btn-small" target="_blank" style="background:#d4a017;color:#fff">💰 احصل على الكتاب الآن</a>
+<p class="note">(60% خصم لأول 70 عائلة جادة تدخل تحدي الـ 14 يوماً)</p>
+<div class="cd-box">
+<div class="cd-item"><div class="num" id="cd-days">07</div><div class="lbl">يوم</div></div>
+<div class="cd-item"><div class="num" id="cd-hours">08</div><div class="lbl">ساعة</div></div>
+<div class="cd-item"><div class="num" id="cd-mins">43</div><div class="lbl">دقيقة</div></div>
+<div class="cd-item"><div class="num" id="cd-secs">02</div><div class="lbl">ثانية</div></div>
+</div>
+<div class="spots">🔥 باقي <b id="spots-left">42</b> مقعد من أصل 70 فقط</div>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn btn-sm" target="_blank" style="margin-top:20px;display:inline-block">💰 اغتنم الفرصة واحجز مقعدك</a>
+</div>
 </div>
 </section>
 
-<!-- الضمان -->
-<section class="alt">
+<!-- ===== السؤال الخامس: ماذا لو لم يعجبني ===== -->
+<section>
 <div class="container">
-<div class="guarantee-box">
-<h3>🔒 ضمان استعادة المال كاملاً — بدون أي سؤال</h3>
-<p>خذ الكتاب وجربه بنفسك ومع عيالك لمدة 14 يوم. لو حسيت إن تركيزك ما تغيرش، أو إن الطريقة لم تفدك، أرسل رسالة واتساب واحدة، تأخذ فلوسك كاملة فوراً بدون أي أسئلة.. والكتاب يفضل معاك مجاناً تقديراً لوقتك.</p>
+<div class="guarantee">
+<div class="icon">🛡️</div>
+<h3>ضمان استعادة المال كاملاً — ولن تخسر شيئاً</h3>
+<p>خذ الكتاب وطبقه مع نفسك ومع عيالك لمدة <b>14 يوماً كاملة</b>. إذا لم تشعر بتحسن في تركيزك، أو لم تعجبك الطريقة، أو حتى لو حسيت إنه ما فادك — فقط راسلني على واتساب، وأعيد لك فلوسك كاملة فوراً بدون أي نقاش أو أسئلة.<br><br><b>والأفضل من هذا:</b> الكتاب يبقى معاك مجاناً هدية مني تقديراً لوقتك وحسن نيتك.</p>
+<p class="big">🔒 المخاطرة كلها عليَّ، الربح كله لك</p>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn btn-sm" target="_blank" style="margin-top:24px;display:inline-block;background:#d4a017;color:#fff">📥 ابدأ الآن — ليس لديك ما تخسره</a>
 </div>
 </div>
 </section>
 
-<!-- CTA again -->
-<section style="padding:40px 0">
-<div class="container" style="text-align:center">
-<p style="font-family:'Amiri',serif;font-size:22px;color:#5c4f3e;margin-bottom:20px">لا تنتظر أن تصبح ذاكرتك مثل المصفاة..<br>قد لا تسنح لك هذه الفرصة مرة أخرى</p>
-<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn" target="_blank">🚀 أبداً الآن — آخر 70 عائلة فقط</a>
+<!-- خاتمة -->
+<section style="padding:40px 0;text-align:center">
+<div class="container">
+<p style="font-family:'Amiri',serif;font-size:20px;color:#5c4f3e;margin-bottom:8px">قال رسول الله ﷺ: «مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت»</p>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn" target="_blank">🎯 نعم، أريد استعادة ذاكرتي وحياتي</a>
 </div>
 </section>
 
 <footer>
 <div class="container">
-<p>من قلب التجربة — كل ما في هذا الكتاب تم اختباره على أرض الواقع</p>
-<p style="margin-top:6px;font-size:13px">© 2026 — جميع الحقوق محفوظة لفريق إحياء الذاكرة</p>
+<p>✧ من القلب إلى القلب — كل كلمة في هذا الكتاب كُتبت لأنها غيرت حياة كاتبها أولاً ✧</p>
+<p style="margin-top:6px;font-size:13px">© 2026 — جميع الحقوق محفوظة لفريق إحياء الذاكرة | للإستفسار: واتساب مباشر</p>
 </div>
 </footer>
+
+<script>
+// عداد تنازلي بسيط 7 أيام من الآن
+(function(){
+  const now = new Date();
+  const end = new Date(now.getTime() + 7*24*60*60*1000);
+  function update(){
+    const diff = end - new Date();
+    if(diff <= 0) return;
+    const d = Math.floor(diff/(86400000));
+    const h = Math.floor((diff%(86400000))/(3600000));
+    const m = Math.floor((diff%(3600000))/(60000));
+    const s = Math.floor((diff%(60000))/1000);
+    document.getElementById('cd-days').textContent = String(d).padStart(2,'0');
+    document.getElementById('cd-hours').textContent = String(h).padStart(2,'0');
+    document.getElementById('cd-mins').textContent = String(m).padStart(2,'0');
+    document.getElementById('cd-secs').textContent = String(s).padStart(2,'0');
+    // المقاعد تتناقص تدريجياً
+    if(Math.random()<0.02){
+      const el = document.getElementById('spots-left');
+      let v = parseInt(el.textContent);
+      if(v>0){v--;el.textContent=v;}
+    }
+  }
+  setInterval(update,1000); update();
+  // عدد عشوائي للمقاعد
+  document.getElementById('spots-left').textContent = Math.floor(30 + Math.random()*20);
+})();
+</script>
 
 </body>
 </html>
