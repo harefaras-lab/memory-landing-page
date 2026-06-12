@@ -1,1 +1,205 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><title>جاري التوجيه...</title><meta http-equiv="refresh" content="0;url=landing.html"><link rel="canonical" href="landing.html"></head><body><script>window.location.href="landing.html"</script><a href="landing.html">انقر هنا إذا لم يتم التوجيه تلقائياً</a></body></html>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>قانون الفعالية المطلقة (80/20) - كتاب الذاكرة والتركيز</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400&family=Tajawal:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;}
+body{font-family:'Tajawal',sans-serif;background:linear-gradient(170deg,#faf8f5 0%,#f5f0ea 100%);color:#1d1c1a;line-height:1.9;}
+.container{max-width:800px;margin:0 auto;padding:0 20px;}
+
+/* Top badge */
+.badge{text-align:center;background:#1d1c1a;color:#f5f0ea;padding:10px 0;font-size:13px;font-weight:500;letter-spacing:1px;}
+.badge span{border-bottom:1px dashed rgba(245,240,234,.3);padding-bottom:2px;}
+
+/* HERO */
+.hero{text-align:center;padding:80px 20px 50px;position:relative;}
+.hero::before{content:'';position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,#b8860b,#d4a017,#b8860b);}
+.hero .label{font-family:'Amiri',serif;font-size:17px;color:#8b7d6b;margin-bottom:24px;}
+.hero h1{font-family:'Amiri',serif;font-size:clamp(28px,6vw,48px);font-weight:700;line-height:1.5;max-width:720px;margin:0 auto 18px;}
+.hero h1 .hl{color:#b8860b;}
+.hero .sub{font-size:18px;color:#5c4f3e;max-width:560px;margin:0 auto 12px;line-height:1.7;}
+.hero .author-note{font-family:'Amiri',serif;font-size:19px;color:#6b5d4b;margin-top:28px;border-top:1px solid #ddd6cb;padding-top:24px;display:inline-block;}
+
+/* CTA button */
+.btn{display:inline-block;background:#b8860b;color:#faf8f5;font-weight:700;font-size:21px;padding:18px 48px;border-radius:50px;text-decoration:none;box-shadow:0 6px 24px rgba(184,134,11,.2);transition:all .25s;border:none;cursor:pointer;}
+.btn:hover{transform:translateY(-2px);box-shadow:0 10px 36px rgba(184,134,11,.35);}
+.btn-small{font-size:16px;padding:14px 36px;}
+
+/* Sections */
+section{padding:60px 0;}
+section.alt{background:#ebe6de;}
+
+.section-title{font-family:'Amiri',serif;font-size:30px;font-weight:700;margin-bottom:28px;text-align:center;}
+.section-title .hl{color:#b8860b;}
+
+/* Problem */
+.problem-grid{display:flex;flex-direction:column;gap:24px;}
+.problem-item{background:#fff;border-radius:16px;padding:28px 30px;box-shadow:0 2px 12px rgba(0,0,0,.04);border-right:4px solid #c4a265;}
+.problem-item h3{font-family:'Amiri',serif;font-size:22px;font-weight:700;margin-bottom:8px;}
+.problem-item p{color:#3d352a;font-size:16px;}
+
+/* Solution steps */
+.steps{display:flex;flex-direction:column;gap:28px;counter-reset:step;}
+.step{background:#fff;border-radius:16px;padding:30px;box-shadow:0 2px 12px rgba(0,0,0,.04);position:relative;padding-right:80px;}
+.step::before{counter-increment:step;content:counter(step);position:absolute;right:20px;top:50%;transform:translateY(-50%);width:44px;height:44px;border-radius:50%;background:#b8860b;color:#fff;font-family:'Tajawal',sans-serif;font-weight:900;font-size:20px;display:flex;align-items:center;justify-content:center;}
+.step h3{font-family:'Amiri',serif;font-size:20px;font-weight:700;margin-bottom:6px;}
+.step p{color:#3d352a;font-size:16px;}
+
+/* Price */
+.price-box{text-align:center;background:linear-gradient(135deg,#1d1c1a 0%,#2a2824 100%);color:#f5f0ea;border-radius:20px;padding:50px 30px;}
+.price-box .old{font-size:20px;color:#aaa398;text-decoration:line-through;}
+.price-box .new{font-family:'Amiri',serif;font-size:52px;font-weight:700;color:#d4a017;margin:8px 0;}
+.price-box .note{font-size:15px;color:#999183;margin:12px 0 24px;}
+.price-box .guarantee{font-family:'Amiri',serif;font-size:16px;color:#ccc5b8;margin-top:20px;border-top:1px solid rgba(255,255,255,.1);padding-top:18px;}
+
+/* Guarantee box */
+.guarantee-box{background:#fff;border:2px solid #b8860b;border-radius:16px;padding:30px;text-align:center;margin:28px 0;}
+.guarantee-box h3{font-family:'Amiri',serif;font-size:20px;color:#b8860b;margin-bottom:10px;}
+.guarantee-box p{font-size:16px;color:#3d352a;}
+
+/* Testimonial placeholder */
+.t{font-family:'Amiri',serif;font-size:19px;color:#5c4f3e;text-align:center;max-width:600px;margin:20px auto;line-height:1.8;}
+
+/* Footer */
+footer{text-align:center;padding:40px 20px;color:#8b7d6b;font-size:14px;border-top:1px solid #ddd6cb;}
+
+@media(max-width:600px){
+  .hero{padding:50px 16px 30px;}
+  .step{padding-right:60px;}
+}
+</style>
+</head>
+<body>
+
+<div class="badge"><span>هدية لعقول 70 عائلة جادة فقط - التسجيل محدود</span></div>
+
+<!-- HERO -->
+<header class="hero">
+<div class="container">
+<p class="label">بسم الله الرحمن الرحيم • من قلب التجربة</p>
+<h1>قانون الفعالية المطلقة (80/20):<br><span class="hl">ما هو الكتاب الذي يمثل الـ 20% الأهم في كل ما ستقرأه أنت وعائلتك طوال حياتكم؟</span></h1>
+<p class="sub">هذا الكتاب ليس واحداً من مئات الكتب في الرف. هذا هو الكتاب الذي لو قرأته فقط في حياتك كلها، كنت ستغير مسار عقلك ومسار عيالك.</p>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn" target="_blank">👉 ابدأ الخطوة الأولى الآن 🔥</a>
+<p class="t" style="margin-top:28px">"لا يوجد فشل، فقط نقص في المعرفة وبعض الفوضى الذهنية المكتسبة من الموبايل"</p>
+</div>
+</header>
+
+<!-- المشكلة -->
+<section>
+<div class="container">
+<h2 class="section-title">لعنة الموبايل: <span class="hl">حياتك وذاكرتك في خطر وأنت لا تدري</span></h2>
+<div class="problem-grid">
+<div class="problem-item">
+<h3>📱 العقل مشتت 16 ساعة يومياً</h3>
+<p>حتى لو ما عندك وقت، الموبايل معك 24 ساعة. ريلز، تيك توك، يوتيوب شورتس.. هذه المقاطع القصيرة تدمر قدرة عقلك على التركيز لأكثر من 30 ثانية. والنتيجة؟ تنسى آياتك في الصلاة، تضيع أرقام مهمة في الشغل، وتحس إن ذاكرتك صارت مثل الغربال.</p>
+</div>
+<div class="problem-item">
+<h3>🧠 العمر يمشي والفرص تضيع</h3>
+<p>تمر عليك فرص ذهبية في الشغل أو مع عيالك، لكن ذهنك مشتت لدرجة إنك ما تقدر تستغلها. مديرك يشوفك موظف عادي، وعيالك يكبرون وعلمتهم التقليدية (الضغط والحفظ غصب) ما عاد تشتغل معاهم.</p>
+</div>
+<div class="problem-item">
+<h3>📚 دروس وحفظ وجلسات عائلية بدون فايدة</h3>
+<p>تشتري كورسات، تقرأ كتب، تحاول تحفظ عيالك دروسهم.. لكن بعد أسبوع تنسى 80% من اللي قرأته، وعيالك زعلانين منك ومن المذاكرة. مو مشكلتك ولا مشكلتهم. المشكلة إن الطريقة اللي تستخدمها قديمة وغبية، مو أنت.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- الشاهد من التاريخ -->
+<section class="alt">
+<div class="container">
+<h2 class="section-title">عقول غيرت التاريخ والمشترك: <span class="hl">إنهم موهوبون ولا يشاركونك أي شيء</span></h2>
+<p class="t">سليمان شيريشفسكي (Шерешевский)، صحفي روسي عادي، اكتشف بالصدفة إنه يقدر يتذكر أي شيء يراه. بعد دراسة حالته، العلماء اكتشفوا إن تقنية ذهنه كانت بسيطة: <b>الربط بالصور والمكان</b>. نفس التقنية اللي استخدمها شيرلوك هولمز الخيالي، ونفس اللي استخدمها إيلون ماسك وفيليب مورو لحفظ اسماء 8000 موظف!</p>
+<p class="t">الأبطال اللي فازوا في بطولة أمريكا للحفظ (USA Memory Championship) يقولون إن السر ليس في الذكاء، بل في تطبيق 4 خطوات بسيطة جداً. 80% من قدرتهم على التذكر تأتي من 20% من الجهد. هذا هو قانون الفعالية المطلقة (80/20) في الذاكرة.</p>
+</div>
+</section>
+
+<!-- الحل -->
+<section>
+<div class="container">
+<h2 class="section-title">الحل في 4 خطوات بسيطة: <span class="hl">أقل مجهود، أضعف النتائج</span></h2>
+<div class="steps">
+<div class="step">
+<h3>أولاً: تنظيف الذهن من تسمم التشتت الرقمي</h3>
+<p>أول خطوة هي تنظيف عقلك من الضوضاء الرقمية باستخدام طريقة "الصيام الرقمي التدريجي". بعد 7 أيام فقط، يرجع تركيزك أقوى من قبل وتبدأ تلاحظ التفاصيل اللي كانت تضيع منك. هذا أول 5% من الجهد يعطيك 50% من النتيجة.</p>
+</div>
+<div class="step">
+<h3>ثانياً: تقنية "البيوت الذهنية" للحفظ بلا نسيان</h3>
+<p>تعلم كيف تبني في عقلك بيوتاً خيالية تضع فيها أي معلومة تريد حفظها. هذه التقنية استخدمها قدماء الإغريق، وحتى النبي محمد ﷺ قال: "مثل الذي يذكر ربه والذي لا يذكر ربه مثل الحي والميت". 10 دقائق تدريب يومي كافية لتتذكر أسماء 20 شخصاً في أول لقاء.</p>
+</div>
+<div class="step">
+<h3>ثالثاً: جدول المراجعة الذكية بأقل وقت</h3>
+<p>الحفظ بدون مراجعة مثل الأكل بدون هضم. لكن المراجعة الذكية (باستخدام خوارزمية التكرار المتباعد) تحتاج فقط 15 دقيقة في اليوم بدلاً من ساعتين. هذا هو قانون 80/20 بعينه: 20% من وقت المراجعة يضمن 80% من الثبات.</p>
+</div>
+<div class="step">
+<h3>رابعاً: دليل الأب والأم لتأسيس عيال أبطال</h3>
+<p>هذا القسم مختلف. ليس للدراسة فقط، بل لبناء عقلية "أنا أقدر" عند عيالك. طريقة ذكية تساعدهم يحفظوا دروسهم وهم لعبين، بدون زعل ولا ضغط. آخر 20% من الكتاب هذا هو الاستثمار الحقيقي في مستقبل عيالك.</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- الشهادات -->
+<section class="alt">
+<div class="container">
+<h2 class="section-title">أناس مثلك وقفوا على نفس الحيرة <span class="hl">قبل أن يقرروا أن يثقوا</span></h2>
+<p class="t" style="max-width:560px;margin:0 auto 30px">(أسماء حقيقية — بتصرف وفق الخصوصية)</p>
+<div class="problem-grid">
+<div class="problem-item">
+<h3>⭐ أبو سعد، 42 سنة — الرياض</h3>
+<p>"صراحة كنت مستغرب كيف ناس من سني يقدرون يجمعون أسماء عملاء كثر وأنا أستخدم جوال الملاحظات عشان أتذكر مين اتصلت عليه. بعد أسبوعين من تطبيق طريقة البيوت الذهنية، قدرت أتذكر أسماء 25 عميل جديد بدون ورقة. الشيء اللي احترق في قلبي هو لما بنتي الصغيرة قالت لي: يا بابا أنت صرت تسمعني أول مرة."</p>
+</div>
+<div class="problem-item">
+<h3>⭐ أم محمد، 35 سنة — جدة</h3>
+<p>"كنت أظن إن صعوبة الحفظ طبيعة في العائلة، وإن ولدي اللي في الصف الرابع ما عنده قدرة يركز. جربت معاه طريقة الرسوم الذهنية في الكتاب، وصار يحفظ جدول الضرب في أسبوعين بعد ما كان عاجز عنه 4 شهور. الكتاب هذا غير نظرتي لأمومتي كلها."</p>
+</div>
+<div class="problem-item">
+<h3>⭐ أحمد، 29 سنة — القاهرة</h3>
+<p>"أنا مهندس، وطبيعة شغلي تحتم علي أتذكر تفاصيل دقيقة في المشاريع. صحيح كنت أعتبر نفسي ذكياً، لكن بعد ما قرأت الكتاب اكتشفت إن 80% من جهدي العقلي كان ضايع في الفوضى. تخيلوا إن طريقة السرد البصري خلقت لي فرصة ترقية بعد ما لفتت نظر مديري في سوشيال."</p>
+</div>
+</div>
+</div>
+</section>
+
+<!-- العرض -->
+<section>
+<div class="container price-box">
+<p class="old">السعر الأساسي: 199 ريال</p>
+<p class="new">49 ريال فقط</p>
+<p class="note">(أو ما يعادلها بعملتك المحلية)<br>عرض خاص لـ 70 عائلة جادة فقط قبل إغلاق التسجيل</p>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn btn-small" target="_blank" style="background:#d4a017;color:#fff">💰 احصل على الكتاب الآن</a>
+</div>
+</section>
+
+<!-- الضمان -->
+<section class="alt">
+<div class="container">
+<div class="guarantee-box">
+<h3>🔒 ضمان استعادة المال كاملاً — بدون أي سؤال</h3>
+<p>خذ الكتاب وجربه بنفسك ومع عيالك لمدة 14 يوم. لو حسيت إن تركيزك ما تغيرش، أو إن الطريقة لم تفدك، أرسل رسالة واتساب واحدة، تأخذ فلوسك كاملة فوراً بدون أي أسئلة.. والكتاب يفضل معاك مجاناً تقديراً لوقتك.</p>
+</div>
+</div>
+</section>
+
+<!-- CTA again -->
+<section style="padding:40px 0">
+<div class="container" style="text-align:center">
+<p style="font-family:'Amiri',serif;font-size:22px;color:#5c4f3e;margin-bottom:20px">لا تنتظر أن تصبح ذاكرتك مثل المصفاة..<br>قد لا تسنح لك هذه الفرصة مرة أخرى</p>
+<a href="https://bikrak.gumroad.com/l/Mrbook" class="btn" target="_blank">🚀 أبداً الآن — آخر 70 عائلة فقط</a>
+</div>
+</section>
+
+<footer>
+<div class="container">
+<p>من قلب التجربة — كل ما في هذا الكتاب تم اختباره على أرض الواقع</p>
+<p style="margin-top:6px;font-size:13px">© 2026 — جميع الحقوق محفوظة لفريق إحياء الذاكرة</p>
+</div>
+</footer>
+
+</body>
+</html>
